@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "sort_table_ehms",
+    "version": "0.1",
+
+    "description": "Sort table by date on PK EHMS",
+
+    "icons": {
+        "48": "icon.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["https://ehms.pk.edu.pl/standard/?tab=1", "https://ehms.pk.edu.pl/standard/"],
+            "js": ["/sort_table.js"]
+        }
+    ]
+}
